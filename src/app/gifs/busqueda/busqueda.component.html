@@ -1,0 +1,9 @@
+<h5>Buscar</h5>
+<!-- en el input 'txtBuscar' es un template variable o referencia local, propio de angular -->
+<input 
+    type="text" 
+    class="form-control" 
+    placeholder="Buscar Giffs..."
+    (keyup.enter)="buscar()"
+    #txtBuscar      
+>
