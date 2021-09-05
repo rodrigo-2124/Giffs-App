@@ -1,1 +1,16 @@
-<div>resultados wroks</div>
+<div class="row">
+    <div *ngFor="let resultado of resultados" 
+        class="col-md-4 col-sm-6">
+        <div class="card">
+            <img 
+                class="card-image-top"
+                [src]="resultado.images.downsized_medium.url" 
+                [alt]="resultado.title">
+            <div class="card-body">
+                <p class="card-text">
+                    {{resultado.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
