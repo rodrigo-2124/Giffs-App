@@ -40,7 +40,7 @@ export class GifsService {
                                   .set('q', query)
                                   .set('limit', '10');
 
-    console.log(params);
+    //console.log(params);
     this.http.get<SearchGifsResponse>(`${this._servicioUrl}/search?`, {params})
     .subscribe( response=>{
       localStorage.setItem('resultados', JSON.stringify(this.resultados));
